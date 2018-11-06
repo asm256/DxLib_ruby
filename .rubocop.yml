@@ -1,0 +1,23 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - '*.gemspec'
+    - 'bin/*'
+    - 'Rakefile'
+# Offense count: 4
+# Configuration parameters: EnforcedStyle.
+# SupportedStyles: native, lf, crlf
+Layout/EndOfLine:
+  EnforcedStyle: 'lf'
+
+# Configuration parameters: AllowedChars.
+Style/AsciiComments:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'spec/*'
