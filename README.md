@@ -1,8 +1,6 @@
-# DxlibRuby
+# Dxlib_Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dxlib_ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[DxLib](http://dxlib.o.oo7.jp)をrubyから使う
 
 ## Installation
 
@@ -22,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```lang-ruby
+require 'dxlib_ruby'
+
+DxLib::Functions.ChangeWindowMode(1)
+DxLib::Functions.SetMainWindowText("test - ウィンドウタイトル")
+DxLib::Functions.DxLib_Init
+
+DxLib::Functions.DrawString(0, 0, "Press ANY KEY\nなにかキーを押してください",
+  DxLib::Functions.GetColor(255, 0, 0), 0)
+
+DxLib::Functions.WaitKey
+DxLib::Functions.DxLib_End
+```
 
 ## Development
 
@@ -32,8 +42,19 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dxlib_ruby.
+Bug reports and pull requests are welcome on GitHub at https://github.com/asm256/DxLib_ruby
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+- DX Library Copyright (C) 2001-2018 Takumi Yamada.
+  - libjpeg Copyright (C) 1991-2013, Thomas G. Lane, Guido Vollbeding.
+    this software is based in part on the work of the Independent JPEG Group
+  - libpng Copyright (C) 2004, 2006-2012 Glenn Randers-Pehrson.
+  - zlib Copyright (C) 1995-2012 Jean-loup Gailly and Mark Adler.
+  - libtiff Copyright (c) 1988-1997 Sam Leffler
+  - libtiff Copyright (c) 1991-1997 Silicon Graphics, Inc.
+  - libogg Copyright (C) 2002-2009 Xiph.org Foundation
+  - Mersenne Twister Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura, All rights reserved.
+  - Bullet Copyright (c) 2003-2006 Erwin Coumans.
