@@ -20,17 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-    require 'dxlib_ruby'
+```ruby
+require 'dxlib_ruby'
 
-    DxLib::Functions.ChangeWindowMode(1)
-    DxLib::Functions.SetMainWindowText("test - ウィンドウタイトル")
-    DxLib::Functions.DxLib_Init
+DxLib::Functions.ChangeWindowMode(1)
+DxLib::Functions.SetMainWindowText("test - ウィンドウタイトル")
+DxLib::Functions.DxLib_Init
 
-    DxLib::Functions.DrawString(0, 0, "Press ANY KEY\nなにかキーを押してください",
-      DxLib::Functions.GetColor(255, 0, 0), 0)
+DxLib::Functions.DrawString(0, 0, "Press ANY KEY\nなにかキーを押してください",
+  DxLib::Functions.GetColor(255, 0, 0), 0)
 
-    DxLib::Functions.WaitKey
-    DxLib::Functions.DxLib_End
+DxLib::Functions.WaitKey
+DxLib::Functions.DxLib_End
+```
 
 ## Development
 
