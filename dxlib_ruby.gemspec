@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   # spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
   spec.summary       = %q{DxLib for ruby}
   spec.description   = %q{DxLib for ruby}
-  spec.homepage      = "http://github.com/asm__/"
+  spec.homepage      = "https://github.com/asm256/DxLib_ruby"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
